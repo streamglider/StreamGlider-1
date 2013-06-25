@@ -1,0 +1,12 @@
+<tr>
+	<td><%= image_tag featured_feed.logo.url, :size => "163x56" %></td>
+  <td><%= featured_feed.feed.title %></td>
+			
+  <td>
+	  <%= link_to 'View', featured_feed %>
+		<%= link_to 'Edit', edit_featured_feed_path(featured_feed) %>
+	  <%= link_to 'Delete', featured_feed, :confirm => 'Are you sure?', :method => :delete %>
+	</td>
+	<td><%= link_to 'Move Up', featured_feeds_move_up_path(:id => featured_feed), :method => :post %>
+	<%= link_to 'Move Down', featured_feeds_move_down_path(:id => featured_feed), :method => :post %></td>
+</tr>

@@ -1,0 +1,29 @@
+<%= form_for(@featured_feed, :html => { :multipart => true }) do |f| %>
+  <% if @featured_feed.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@featured_feed.errors.count, "error") %> prohibited this featured_feed from being saved:</h2>
+
+      <ul>
+      <% @featured_feed.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<% if @featured_feed.logo.file? %>
+		<%= image_tag @featured_feed.logo.url %>
+	<% end %>
+
+  <div class="field">
+    <%= f.label :logo %>:
+    <%= f.file_field :logo %>
+  </div>
+
+	<%= f.hidden_field :feed_id %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>

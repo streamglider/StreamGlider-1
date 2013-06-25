@@ -1,0 +1,5 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+from_ian:
+  user_id: 1
+  stream_id: 1

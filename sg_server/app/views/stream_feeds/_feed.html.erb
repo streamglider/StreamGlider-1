@@ -1,0 +1,15 @@
+<tr>
+	
+  <td><%= feed.title %></td>
+
+	<td><%= feed.url %></td>
+	
+	<td><%= feed.feed_type %></td>
+		
+  <td><%= link_to 'Edit', edit_stream_feed_path(feed) %></td>
+  <td><%= link_to 'Delete', feed, :confirm => 'Are you sure?', :method => :delete %></td>
+		
+	<td><%= link_to 'Move Up', stream_feeds_move_up_path(:id => feed), :method => :post %>
+	<%= link_to 'Move Down', stream_feeds_move_down_path(:id => feed), :method => :post %></td>
+	
+</tr>

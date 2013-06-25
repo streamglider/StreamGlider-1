@@ -1,0 +1,31 @@
+<h1>Default Streams</h1>
+
+<table border="1">
+  <tr>
+    <th></th>
+    <th>Title</th>
+    <th>Actions</th>
+    <th>Position</th>
+  </tr>
+
+<% @streams.each do |default_stream| %>
+  <tr>
+		<td>
+			<%= default_stream.position %>
+		</td>
+		<td><%= link_to default_stream.title, default_stream_path(default_stream) %>
+    <td>
+	    <%= link_to 'Edit', edit_default_stream_path(default_stream) %>
+	    <%= link_to 'Destroy', default_stream_path(default_stream), :confirm => 'Are you sure?', :method => :delete %>
+		</td>
+		<td>
+			<%= link_to 'Move Up', default_streams_move_up_path(:id => default_stream), :method => :post %>
+			<%= link_to 'Move Down', default_streams_move_down_path(:id => default_stream), :method => :post %>
+		</td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Add Default Stream', new_default_stream_path %>

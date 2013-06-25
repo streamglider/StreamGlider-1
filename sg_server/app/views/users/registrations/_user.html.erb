@@ -1,0 +1,7 @@
+<tr>
+	<td><%= user.email %></td>
+	<td><%= user.created_at %></td>
+	<td><%= user.streams.count %></td>
+	<td><%= user.incoming_streams.count %></td>
+	<td><%= link_to 'Delete', users_path(:id => user.id), :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>	

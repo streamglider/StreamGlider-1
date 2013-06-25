@@ -1,0 +1,22 @@
+<h1>Administrators</h1>
+
+<table border = "1">
+  <tr>
+    <th>Email</th>
+		<th>Date Created</th>
+    <th>Actions</th>
+  </tr>
+
+	<%= render :partial => 'admin', :collection => @admins %>
+	
+</table>
+
+<br>
+
+<%= link_to "Create New Administrator", new_admin_registration_path %>
+
+<br>
+
+<%= link_to "Change My Password", edit_admin_password_path %>
+
+<p>Total number of admins: <%= @admins.count %></p>

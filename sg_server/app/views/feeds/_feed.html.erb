@@ -1,0 +1,33 @@
+<tr>
+	<td>
+		<% if feed.image? %>
+			<%= image_tag feed.image.url, :size => "35x35" %>
+		<% end %>
+	</td>
+  <td><%= link_to_unless feed.leaf, feed.title, feed_path(feed) %></td>
+
+	<% if contains_leaf_nodes %>
+		<td><%= feed.url %></td>
+	<% else %>
+		<td><%= feed.children.count %></td>
+	<% end %>
+	
+	<td><%= feed.feed_type %></td>
+	
+	<td>
+		<% if feed.leaf %>
+			<% if feed.featured_feed %>
+				<%= link_to 'Remove Featured', feed.featured_feed, :confirm => 'Are you sure?', :method => :delete %>
+			<% else %>
+				<%= link_to 'Make Featured', new_featured_feed_path(:feed_id => feed.id) %>		
+			<% end %>
+		<% end %>
+	</td>
+	
+  <td><%= link_to 'Edit', edit_feed_path(feed) %></td>
+  <td><%= link_to 'Delete', feed, :confirm => 'Are you sure?', :method => :delete %></td>
+		
+	<td><%= link_to 'Move Up', feeds_move_up_path(:id => feed), :method => :post %>
+	<%= link_to 'Move Down', feeds_move_down_path(:id => feed), :method => :post %></td>
+	
+</tr>

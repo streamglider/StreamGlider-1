@@ -1,0 +1,11 @@
+<h2><%= link_to 'Feeds DB', feeds_path %></h2>
+
+<h2><%= link_to 'Featured Feeds', featured_feeds_path %></h2>
+
+<h2><%= link_to 'Edit Users', users_path %></h2>
+
+<h2><%= link_to 'Default Streams', default_streams_path %></h2>
+
+<% if admin_signed_in? %>
+	<h2><%= link_to 'Edit Admins', admins_path %></h2>	
+<% end %>

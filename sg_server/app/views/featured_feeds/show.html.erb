@@ -1,0 +1,22 @@
+<%= image_tag @featured_feed.logo.url %>
+
+<p>
+<b>Featured Feed Categories:</b> <%= @parents.map { |p| link_to p.title, p }.join(' / ').html_safe %>
+</p>
+
+<p>
+<b>Featured Feed Title:</b> <%= @featured_feed.feed.title %>
+</p>
+
+<p><b>Featured Feed URL</b>: <%= @featured_feed.feed.url %></p>
+<p><b>Featured Feed Type</b>: <%= @featured_feed.feed.feed_type %></p>
+		
+<%= link_to 'Edit', edit_featured_feed_path(@featured_feed) %>
+
+<br />
+
+<%= link_to 'Delete', @featured_feed, :confirm => 'Are you sure?', :method => :delete %>
+
+<br />
+
+<%= link_to 'Back', featured_feeds_path %>

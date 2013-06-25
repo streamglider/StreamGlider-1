@@ -1,0 +1,54 @@
+<h1><%= @feed.title %></h1>
+
+<% if @feed.leaf %>
+	<p>
+	  <b>Url:</b>
+	  <%= @feed.url %>
+	</p>
+<% else %>
+	<% if @feed.image? %>
+		<%= image_tag @feed.image.url, :size => "35x35" %>
+	<% end %>
+	<table border = "1">
+	  <tr>
+			<th>Image</th>
+	    <th>Title</th>
+			<% if @contains_leaf_nodes %>
+				<th>URL</th>
+			<% else %>
+	    	<th>Number of children</th>
+			<% end %>
+	    <th>Type</th>
+			<th>Featured</th>
+	    <th></th>
+	    <th></th>
+			<th>Position</th>
+	  </tr>
+	
+		<%= render :partial => 'feed', :collection => @children, :locals => { :contains_leaf_nodes => @contains_leaf_nodes } %>
+		
+	</table>
+	
+	<br />
+	
+	<% if @feed.parent %>
+		<%= link_to 'Up', @feed.parent %>
+	<% else %>	
+		<%= link_to 'Up', feeds_path %>
+	<% end %>
+	
+	<br />
+	<br />
+	
+	<%= link_to 'Sort Alphabetically', feeds_sort_path(:id => @feed.id), :method => :post %>
+	
+	<br />
+	<br />
+	
+	<% if @contains_leaf_nodes %>
+		<%= link_to "Add Feed", new_feed_path(:leaf => true, :parent_id => @feed.id) %>
+	<% else %>
+		<%= link_to "Add Sub-Category", new_feed_path(:parent_id => @feed.id) %>
+	<% end %>	
+<% end %>
+

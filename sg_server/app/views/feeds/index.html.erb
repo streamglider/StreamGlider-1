@@ -1,0 +1,27 @@
+<h1>Top Level Categories</h1>
+
+<table border = "1">
+  <tr>
+		<th>Image</th>
+    <th>Title</th>
+    <th>Number of children</th>
+
+    <th>Type</th>
+		<th>Featured</th>
+    <th></th>
+    <th></th>
+		<th>Position</th>
+  </tr>
+
+	<%= render :partial => 'feed', :collection => @feeds, :locals => { :contains_leaf_nodes => false } %>
+	
+</table>
+
+<br />
+
+<%= link_to 'Sort Alphabetically', feeds_sort_path, :method => :post %>
+
+<br />
+<br />
+
+<%= link_to 'New Category', new_feed_path %>

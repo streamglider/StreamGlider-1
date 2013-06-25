@@ -1,0 +1,7 @@
+<h1>Editing Default Stream</h1>
+
+<%= render :partial => 'form', :locals => { :url => default_stream_path(@stream) } %>
+
+<%= link_to 'Show', default_stream_path(@stream) %> |
+
+<%= link_to 'Back', default_streams_path %>

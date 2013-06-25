@@ -1,0 +1,50 @@
+<%= form_for(@feed, :html => { :multipart => true }) do |f| %>
+  <% if @feed.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@feed.errors.count, "error") %> prohibited this feed from being saved:</h2>
+
+      <ul>
+      <% @feed.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+
+	<% if @feed.leaf %>
+	  <div class="field">
+	    <%= f.label :url %><br />
+	    <%= f.text_field :url %>
+	  </div>
+	
+	  <div class="field">
+	    <%= f.label :feed_type %><br />
+	    <%= f.select :feed_type, Feed.feed_types %>
+	  </div>
+	
+	<% else %>
+		<% if @feed.image.file? %>
+			<%= image_tag @feed.image.url %>
+			<%= link_to 'Clear Image', feeds_clear_image_path(:id => @feed), :method => :post %>
+		<% end %>
+		
+		<% if @feed.parent && !@feed.parent.parent %>
+		  <div class="field">
+		    <%= f.label :image %><br />
+		    <%= f.file_field :image %>
+		  </div>
+		<% end %>
+	<% end %>
+	
+	<%= f.hidden_field :leaf %>
+	<%= f.hidden_field :parent_id %>
+	
+  <div class="actions">
+    <%= f.submit 'Update' %>
+  </div>
+<% end %>

@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+nyt:
+  stream_id: 1
+  position: 0
+  url: http://nytimes.com/feed.xml
+  title: "NYTimes"
+  feed_type: "RSS"
+

@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+news:
+  id: 1
+  title: News
+  leaf: false
+
+sports:
+  id: 2
+  title: Sports
+  leaf: false
+  
+nyt:
+  id: 3
+  title: NYT
+  leaf: true
+  URL: "http://nytimes.com/rssfeed.xml"  
+
+cnn:
+  id: 4
+  title: CNN
+  leaf: true
+  URL: "http://cnn.com/rssfeed.xml"    

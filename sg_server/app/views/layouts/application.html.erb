@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= SERVER_NAME %></title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<% unless @skip_nav %>
+
+	<%= link_to "Home", root_path %>
+
+	<br />
+
+	<% if admin_signed_in? %>
+		Welcome, <%= current_admin.email %>.
+		<br />
+		<%=  link_to 'Logout', destroy_admin_session_path %>
+	<% else %>
+		<%=  link_to 'Login', new_admin_session_path %>
+	<% end %>
+	
+<% end %>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<%= yield %>
+
+</body>
+</html>

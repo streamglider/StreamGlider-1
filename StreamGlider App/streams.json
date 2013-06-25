@@ -1,0 +1,57 @@
+{
+"streams":[
+	{"title":"News",
+	"feeds":[
+		{"title":"Yahoo! News: Weather News",
+		"url":"http://rss.news.yahoo.com/rss/weather",
+		"type":"RSS"},
+		{"title":"Yahoo! News: U.S. News",
+		"url":"http://rss.news.yahoo.com/rss/us",
+		"type":"RSS"},
+		{"title":"CNN News",
+		"url":"http://rss.cnn.com/rss/edition.xml",
+		"type":"RSS"},
+		{"title":"USA Today Top Stories",
+		"url":"http://rssfeeds.usatoday.com/usatoday-NewsTopStories",
+		"type":"RSS"}
+	]},
+	{"title":"Tech",
+	"feeds":[
+		{"title":"Twitter Tech",
+		"url":"http://search.twitter.com/search.atom?q=%23tech",
+		"type":"Twitter"},
+		{"title":"Flickr Tech",
+		"url":"http://api.flickr.com/services/rest/?method=flickr.photos.search&extras=date_upload,owner_name&content_type=7&text=technology",
+		"type":"Flickr"}
+	]},
+		{"title":"Sports",
+	"feeds":[
+		{"title":"Formula 1",
+		"url":"http://gdata.youtube.com/feeds/api/videos?q=Formula%201",
+		"type":"YouTube"},
+		{"title":"football",
+		"url":"http://gdata.youtube.com/feeds/api/videos?q=football",
+		"type":"YouTube"},
+		{"title":"NASCAR",
+		"url":"http://gdata.youtube.com/feeds/api/videos?q=NASCAR",
+		"type":"YouTube"},
+		{"title":"football",
+		"url":"http://api.flickr.com/services/rest/?method=flickr.photos.search&extras=date_upload,owner_name&content_type=7&text=football",
+		"type":"Flickr"},
+		{"title":"NASCAR",
+		"url":"http://api.flickr.com/services/rest/?method=flickr.photos.search&extras=date_upload,owner_name&content_type=7&text=NASCAR",
+		"type":"Flickr"}
+	]},
+	{"title":"Images",
+	"feeds":[
+		{"title":"Interesting Photos",
+		"url":"http://api.flickr.com/services/rest/?method=flickr.interestingness.getList&extras=date_upload,owner_name",
+		"type":"Flickr"},
+		{"title":"United States",
+		"url":"http://gdata.youtube.com/feeds/api/videos?q=United%20States",
+		"type":"YouTube"},
+		{"title":"cats",
+		"url":"http://gdata.youtube.com/feeds/api/videos?q=cats",
+		"type":"YouTube"}
+	]}
+]}

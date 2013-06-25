@@ -1,0 +1,5 @@
+<tr>
+	<td><%= admin.email %></td>
+	<td><%= admin.created_at %></td>
+	<td><%= link_to 'Delete', admins_path(:id => admin.id), :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>	

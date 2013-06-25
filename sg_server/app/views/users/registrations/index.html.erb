@@ -1,0 +1,16 @@
+<h1>Users</h1>
+
+<table border = "1">
+  <tr>
+    <th>Email</th>
+		<th>Date Created</th>
+    <th>Streams Sent</th>
+		<th>Streams Received</th>
+    <th>Actions</th>
+  </tr>
+
+	<%= render :partial => 'user', :collection => @users %>
+	
+</table>
+
+<p>Total number of users: <%= @users.count %></p>

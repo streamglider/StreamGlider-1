@@ -1,0 +1,20 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+livematrix:
+  id: 1
+  feed_id: 1
+  position: 1
+  logo_file_name: 'livematrix.png'
+
+sports:
+  id: 2 
+  feed_id: 2
+  position: 2
+  logo_file_name: 'sports.png'
+  
+nyt:
+  id: 3
+  feed_id: 3
+  position: 3  
+  logo_file_name: 'nyt.png'
+  

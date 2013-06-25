@@ -1,0 +1,19 @@
+<h1><%= @stream.title %></h1>
+
+<table border = "1">
+  <tr>
+    <th>Title</th>
+		<th>URL</th>
+    <th>Type</th>
+    <th></th>
+    <th></th>
+		<th>Position</th>
+  </tr>
+
+	<%= render :partial => 'stream_feeds/feed', :collection => @stream.stream_feeds %>
+	
+</table>	
+
+<%= link_to "Add Feed", new_stream_feed_path(:stream_id => @stream.id) %>
+
+<%= link_to 'Back', default_streams_path %>
