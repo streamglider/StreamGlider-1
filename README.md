@@ -1,6 +1,6 @@
-# ![StreamGlider](https://github.com/streamglider/images/blob/master/StreamGlider Logo Small.png?raw=true)
+# ![StreamGlider](https://github.com/streamglider/images/blob/master/StreamGlider Logo Small.png?raw=true) StreamGlider
 
-__By [StreamGlider Inc.](http://streamglider.com/)__
+***By [StreamGlider Inc.](http://streamglider.com/)***
 
 StreamGlider is a personal news and information delivery app. StreamGlider lets users build streams of information sources. Streams are mixtures or mashups of frames containing RSS feeds, Twitter, Facebook, YouTube or other information sources. Each frame in a stream can contain news or information from one of these sources, filtered by search criteria. Any number of streams can be built by the user and any number of pages (groupings) of streams can be built. Or, the administrator can limit the number and/or provide locked-in, pre-built streams.
 
