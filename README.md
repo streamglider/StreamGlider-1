@@ -4,17 +4,18 @@ By [StreamGlider Inc.](http://streamglider.com/)
 
 StreamGlider is a personal news and information delivery app. StreamGlider lets users build streams of information sources. Streams are mixtures or mashups of frames containing RSS feeds, Twitter, Facebook, YouTube or other information sources. Each frame in a stream can contain news or information from one of these sources, filtered by search criteria. Any number of streams can be built by the user and any number of pages (groupings) of streams can be built. Or, the administrator can limit the number and/or provide locked-in, pre-built streams.
 
-Three modes of viewing are supported in StreamGlider. Grid mode is a lean-forward, grid view of the streams. Slideshow mode is a lean-back, full-screen view. Magazine mode is a page layout viewing mode for streams and frames, with larger areas devoted to each frame of a stream.
+Three modes of viewing are supported in StreamGlider. Grid mode [[VIDEO]](http://www.youtube.com/watch?v=i8xJh0ZhrKc) is a lean-forward, grid view of the streams. Slideshow mode [[VIDEO]](http://www.youtube.com/watch?v=2kc3swNEfWE) is a lean-back, full-screen view. Magazine mode [[VIDEO]](http://www.youtube.com/watch?v=wxreVOVsbIM) is a page layout viewing mode for streams and frames, with larger areas devoted to each frame of a stream.
 
 ## Key benefits
 
 The benefits of using StreamGlider over other news and information platforms are many:
 
-* Configurability: users and/or administrators can create a custom focus and look to the news and information they display
-* Brandable: StreamGlider can be white-labeled with branding assets or private-labeled with more extensive cusomizations
+* Configurability: users and/or administrators can create a custom focus and look to the news and information they display [[VIDEO]](http://www.youtube.com/watch?v=1__UEi_TJp4)
+* Brandable: StreamGlider can be white-labeled with branding assets or private-labeled with more extensive cusomizations [[VIDEO]](http://www.youtube.com/watch?v=NCz01u3UNOE)
 * Heterogeneity: streams pertaining to a single subject can be built with diverse sources all filtered for that subject
 * Timeliness: StreamGlider selects the most current stories, postings, or uploads that match its user-defined selection criteria
 * Stewardship: because StreamGlider can be branded by the administrator, it can be used as an enterprise-specific application, with general or restricted availability
+* Event displays: when connected to a big screen, StreamGlider is ideal for displays at conferences, trade shows, and other events [[VIDEO]](http://www.youtube.com/watch?v=7xqv2NIjyiI)
 
 StreamGlider consists of an API server (for managing streams, directories of available streams, users, etc.) and the iPad app itself.
 
@@ -79,8 +80,8 @@ More information on these graphics is available here: https://github.com/streamg
 
 ### Maintainers
 
-* wdmcdaniel (code, documentation)
-* johnbreslin (documentation)
+* [wdmcdaniel](https://github.com/wdmcdaniel) (code, documentation)
+* [johnbreslin](https://github.com/johnbreslin) (documentation)
 
 ### License
 
