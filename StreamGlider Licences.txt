@@ -1,10 +1,12 @@
-
 For non-commercial use, this software is licensed under the BSD 4-clause
 license (below). For a commercial-use license, contact StreamGlider Inc.
-at info@streamglider.com 
-An unaltered copy of this file, "StreamGlider Licenses.txt", must accompany any distribution of the StreamGlider code.
+at info@streamglider.com
 
-Non-commercial Use License
+An unaltered copy of this file, "StreamGlider Licenses.txt", must accompany
+any distribution of the StreamGlider code.
+
+Non-Commercial Use License
+--------------------------
 
 Copyright (c) 2013, StreamGlider Inc.
 All rights reserved.
