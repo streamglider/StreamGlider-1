@@ -85,7 +85,7 @@ More information on these graphics is available here: https://github.com/streamg
 
 ### License
 
-This program is distributed for non-commercial use under the BSD 4-clause license. Commercial-use licensing is available by contacting info@streamglider.com. A copy of the license is included with this distribution in the "StreamGlider Licenses.txt" file which must accompany any distribution of the code.
+This program is distributed for non-commercial use under the BSD 4-clause license. Commercial-use licensing is available by contacting [info@streamglider.com](mailto:info@streamglider.com). A copy of the license is included with this distribution in the "StreamGlider Licenses.txt" file which must accompany any distribution of the code.
 
 ### Third-party components
 
