@@ -4,7 +4,7 @@ By [StreamGlider Inc.](http://streamglider.com/)
 
 StreamGlider is a personal news and information delivery app. StreamGlider lets users build streams of information sources. Streams are mixtures or mashups of frames containing RSS feeds, Twitter, Facebook, YouTube or other information sources. Each frame in a stream can contain news or information from one of these sources, filtered by search criteria. Any number of streams can be built by the user and any number of pages (groupings) of streams can be built. Or, the administrator can limit the number and/or provide locked-in, pre-built streams.
 
-Three modes of viewing are supported in StreamGlider. Grid mode [[VIDEO]](http://www.youtube.com/watch?v=i8xJh0ZhrKc) is a lean-forward, grid view of the streams. Slideshow mode [[VIDEO]](http://www.youtube.com/watch?v=2kc3swNEfWE) is a lean-back, full-screen view. Magazine mode [[VIDEO]](http://www.youtube.com/watch?v=wxreVOVsbIM) is a page layout viewing mode for streams and frames, with larger areas devoted to each frame of a stream.
+Three modes of viewing are supported in StreamGlider. Grid mode is a lean-forward, grid view of the streams [[VIDEO]](http://www.youtube.com/watch?v=i8xJh0ZhrKc). Slideshow mode is a lean-back, full-screen view [[VIDEO]](http://www.youtube.com/watch?v=2kc3swNEfWE). Magazine mode is a page layout viewing mode for streams and frames, with larger areas devoted to each frame of a stream [[VIDEO]](http://www.youtube.com/watch?v=wxreVOVsbIM).
 
 ## Key benefits
 
