@@ -1,4 +1,4 @@
-# ![StreamGlider Logo Small](https://github.com/streamglider/images/blob/master/StreamGlider Logo Small.png?raw=true) StreamGlider
+# ![StreamGlider](https://github.com/streamglider/images/blob/master/StreamGlider Logo Small.png?raw=true)
 
 __By [StreamGlider Inc.](http://streamglider.com/)__
 
