@@ -1,61 +1,63 @@
 # StreamGlider
 
-By [StreamGlider](http://streamglider.com/).
+By [StreamGlider Inc.](http://streamglider.com/).
 
-StreamGlider is a personal news and information delivery app. StreamGlider lets users build streams of information sources. Streams are mixtures or mashups of Frames containing RSS feeds, Twitter, Facebook, Youtube or other information sources. Each Frame in a stream can contain news or information from one of these sources, filtered by search criteria. Any number of streams can be built by the user and any number of pages of streams can be built. Or, the administration can limit the number and/or provide locked in, pre-built streams.
+StreamGlider is a personal news and information delivery app. StreamGlider lets users build streams of information sources. Streams are mixtures or mashups of frames containing RSS feeds, Twitter, Facebook, YouTube or other information sources. Each frame in a stream can contain news or information from one of these sources, filtered by search criteria. Any number of streams can be built by the user and any number of pages (groupings) of streams can be built. Or, the administrator can limit the number and/or provide locked-in, pre-built streams.
 
-Three modes of viewing are supported in StreamGlider. Grid mode is a lean forward, gridded view of the streams. Slideshow mode is a lean back, full screen view. Magazine mode is a page layout viewing mode of streams and frames, with larger areas devoted to each fame of a stream.
+Three modes of viewing are supported in StreamGlider. Grid mode is a lean-forward, grid view of the streams. Slideshow mode is a lean-back, full-screen view. Magazine mode is a page layout viewing mode for streams and frames, with larger areas devoted to each frame of a stream.
 
-## Key Benefits
+## Key benefits
 
-The benefits of using SG over other News and Information platforms are many:
-- Configurability - Users and/or administrators can create a custom focus and look to the news and information they display
-- Brandable - StreamGlider can be White labeled with branding assets or private labeled with more extensive cusomizations
-- Heterogeneity - Streams pertaining to a single subject can be built with diverse sources all filtered for that subject
-- Timeliness - StreamGlider selects the most current stories, postings, or uploads that match its user-defined selection criteria
-- Stewardship - because StreamGlider can be branded by the administration, it can be used as an enterprise specific ap[plication, with general or restricted availability
+The benefits of using StreamGlider over other news and information platforms are many:
 
-## StreamGlider server setup
+* Configurability: users and/or administrators can create a custom focus and look to the news and information they display
+* Brandable: StreamGlider can be white-labeled with branding assets or private-labeled with more extensive cusomizations
+* Heterogeneity: streams pertaining to a single subject can be built with diverse sources all filtered for that subject
+* Timeliness: StreamGlider selects the most current stories, postings, or uploads that match its user-defined selection criteria
+* Stewardship: because StreamGlider can be branded by the administrator, it can be used as an enterprise-specific application, with general or restricted availability
 
-Server app (sg_server) requires Ruby 1.8.7 or higher and Ruby on Rails 3.0.3
+StreamGlider consists of an API server (for managing streams, directories of available streams, users, etc.) and the iPad app.
+
+## StreamGlider API server setup
+
+The StreamGlider API Server requires Ruby 1.8.7 or higher and Ruby on Rails 3.0.3.
 
 Before the server can be deployed, the following configuration options should be provided:
 
-- In "config/environment.rb" please provide your SG API server host name, `HOST_NAME = '<TODO: add your host name here>'`
+* In the "config/environment.rb" file, please provide your StreamGlider API server host name, "HOST_NAME = '<TODO: add your host name here>'"
+* In the "config/environments/production.rb" file, please configure 'config.action_mailer.smtp_settings'
+* Please generate new 'hash_secret' and 'secret_token' in the "config/initializers/paperclip_defaults.rb" and "config/initializers/secret_token.rb" files
+* Provide a server name, e.g. "Acme Corporation API Server" in the "config/initializers/server_name.rb" file
 
-- In "config/environments/production.rb" please configure `"config.action_mailer.smtp_settings"`
-
-- Please generate new `hash_secret` and `secret_token` in "config/initializers/paperclip_defaults.rb" and "config/initializers/secret_token.rb"
-
-- Provide a server name, e.g. "StreamGlider API Sever" in "config/initializers/server_name.rb"
-
-**Note**: all the places where changes are to be made can be found with a simple search for "TODO:" string.
+**Note**: all places where changes are to be made can be found with a simple search for the 'TODO:' string.
 
 ## StreamGlider iPad app setup
 
-There are several things to take care of before iPad app can be published.
+There are several things to take care of before an iPad app can be published.
 
 ### StreamGlider API server configuration
 
-In "Other Sources/StreamCastServerConfig.m" file please provide `API_V2_URL`, a URL to your SG API server host. 
+In the "Other Sources/StreamCastServerConfig.m" file, please provide 'API_V2_URL', a URL to your StreamGlider API server host name.
 
 ### StreamGlider app settings
 
-In "Other Sources/StreamCastConstants.m" please provide `APP_NAME`, `RELEASE_DATE`, `TAG_LINE` and 'SITE_URL'. `SITE_URL` can be a separate from SG API server host with marketing related information. 
+In "Other Sources/StreamCastConstants.m", please provide 'APP_NAME', 'RELEASE_DATE', 'TAG_LINE' and 'SITE_URL'. 'SITE_URL' is a separate URL from the StreamGlider API server host name, usually used for marketing-related information. 
 
-In StreamGlider target editor, `Bundle identifier` and `Bundle display name` should be changed. 
+In StreamGlider target editor, 'Bundle identifier' and 'Bundle display name' should be changed. 
+
+More information on text changes for configuring the app are available here: http://streamglider.org/Text_Changes
 
 ### Social networks integration
 
-"Other Sources/StreamCastServiceKeys.m" file contains social networks related configuration. Twitter, Facebook, Flickr and YouTube are currently supported. Applications should be registered with social networks in order to get necessary client/consumer IDs and secrets.
+"Other Sources/StreamCastServiceKeys.m" file contains social network-related configurations. Twitter, Facebook, flickr and YouTube are currently supported. Applications should be registered with social networks in order to get the necessary client/consumer IDs and secrets.
 
 ### Proxy support
 
-Proxy can be enabled and configured using "Other Sources/StreamCastProxyConfig.m" file.
+Proxy can be enabled and configured using the "Other Sources/StreamCastProxyConfig.m" file.
 
 ### Graphic resources 
 
-StreamGlider iPad app contains several branded images that should be replaced before publishing. All of the images reside in "Resources" folder, please see file names listed below:
+StreamGlider iPad app contains several branded images that should be replaced before publishing. All of the images reside in "Resources" folder, please see the file names listed below:
 
 - "iTunesArtwork.png"
 - "Default-Landscape.png"
@@ -67,10 +69,20 @@ StreamGlider iPad app contains several branded images that should be replaced be
 - "Streams View/motif.png"
 - "Launch-Card.png"
 
+
+More information on these graphics is available here: http://streamglider.org/Graphic_Assets
+
 ## Additional Information 
 
 ### Maintainers
-TODO: Add a list of maintainers
+
+* wdmcdaniel (code, documentation)
+* johnbreslin (documentation)
 
 ### License
-This program is distributed for non-commercial use under the BSD 4-clause license. Commercial use licending is available by contacting info@streamglider.com. A copy of the license is included with this distribution in the "StreamGlider Licenses.txt" which must accompany any distribution of the code.
+
+This program is distributed for non-commercial use under the BSD 4-clause license. Commercial-use licensing is available by contacting info@streamglider.com. A copy of the license is included with this distribution in the "StreamGlider Licenses.txt" file which must accompany any distribution of the code.
+
+### Third-party components
+
+StreamGlider makes use of a number of third-party components, all of which are open source with no restrictions on their use or redistribution apart from attribution in some cases. More information on these component licenses are available here: http://streamglider.org/Third_Party_Components
