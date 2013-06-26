@@ -1,6 +1,6 @@
 # StreamGlider
 
-By [StreamGlider Inc.](http://streamglider.com/).
+By [StreamGlider Inc.](http://streamglider.com/)
 
 StreamGlider is a personal news and information delivery app. StreamGlider lets users build streams of information sources. Streams are mixtures or mashups of frames containing RSS feeds, Twitter, Facebook, YouTube or other information sources. Each frame in a stream can contain news or information from one of these sources, filtered by search criteria. Any number of streams can be built by the user and any number of pages (groupings) of streams can be built. Or, the administrator can limit the number and/or provide locked-in, pre-built streams.
 
@@ -16,7 +16,7 @@ The benefits of using StreamGlider over other news and information platforms are
 * Timeliness: StreamGlider selects the most current stories, postings, or uploads that match its user-defined selection criteria
 * Stewardship: because StreamGlider can be branded by the administrator, it can be used as an enterprise-specific application, with general or restricted availability
 
-StreamGlider consists of an API server (for managing streams, directories of available streams, users, etc.) and the iPad app.
+StreamGlider consists of an API server (for managing streams, directories of available streams, users, etc.) and the iPad app itself.
 
 ## StreamGlider API server setup
 
@@ -30,6 +30,8 @@ Before the server can be deployed, the following configuration options should be
 * Provide a server name, e.g. "Acme Corporation API Server" in the "config/initializers/server_name.rb" file
 
 **Note**: all places where changes are to be made can be found with a simple search for the 'TODO:' string.
+
+More details are available here: http://streamglider.org/Server_Installation_Guide
 
 ## StreamGlider iPad app setup
 
