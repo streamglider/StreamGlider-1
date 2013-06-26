@@ -18,6 +18,8 @@ The benefits of using StreamGlider over other news and information platforms are
 
 StreamGlider consists of an API server (for managing streams, directories of available streams, users, etc.) and the iPad app itself.
 
+A full feature list is available here: https://github.com/streamglider/streamglider/wiki/Feature-List
+
 ## StreamGlider API server setup
 
 The StreamGlider API Server requires Ruby 1.8.7 or higher and Ruby on Rails 3.0.3.
@@ -31,7 +33,7 @@ Before the server can be deployed, the following configuration options should be
 
 **Note**: all places where changes are to be made can be found with a simple search for the 'TODO:' string.
 
-More details are available here: http://streamglider.org/Server_Installation_Guide
+More details are available here: https://github.com/streamglider/streamglider/wiki/Server-Installation-Guide
 
 ## StreamGlider iPad app setup
 
@@ -47,7 +49,7 @@ In "Other Sources/StreamCastConstants.m", please provide 'APP_NAME', 'RELEASE_DA
 
 In StreamGlider target editor, 'Bundle identifier' and 'Bundle display name' should be changed. 
 
-More information on text changes for configuring the app are available here: http://streamglider.org/Text_Changes
+More information on text changes for configuring the app are available here: https://github.com/streamglider/streamglider/wiki/Text-Changes
 
 ### Social networks integration
 
@@ -71,8 +73,7 @@ StreamGlider iPad app contains several branded images that should be replaced be
 - "Streams View/motif.png"
 - "Launch-Card.png"
 
-
-More information on these graphics is available here: http://streamglider.org/Graphic_Assets
+More information on these graphics is available here: https://github.com/streamglider/streamglider/wiki/Graphic-Assets
 
 ## Additional Information 
 
@@ -87,4 +88,4 @@ This program is distributed for non-commercial use under the BSD 4-clause licens
 
 ### Third-party components
 
-StreamGlider makes use of a number of third-party components, all of which are open source with no restrictions on their use or redistribution apart from attribution in some cases. More information on these component licenses are available here: http://streamglider.org/Third_Party_Components
+StreamGlider makes use of a number of third-party components, all of which are open source with no restrictions on their use or redistribution apart from attribution in some cases. More information on these component licenses are available here: https://github.com/streamglider/streamglider/wiki/Third-Party-Components
