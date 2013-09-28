@@ -19,7 +19,7 @@ The benefits of using StreamGlider over other news and information platforms are
 
 StreamGlider consists of an API server (for managing streams, directories of available streams, users, etc.) and the iPad app itself.
 
-A full feature list is available here: https://github.com/streamglider/streamglider/wiki/Feature-List
+A full list of features is available here: https://github.com/streamglider/streamglider/wiki/Feature-List
 
 ## StreamGlider API server setup
 
